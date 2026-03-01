@@ -13,7 +13,7 @@ from firebase_admin import credentials, db
 
 cred = credentials.Certificate("firebase-sdk.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL':'https://grammarhelp-a3d91-default-rtdb.firebaseio.com/'
+    'databaseURL':''
 })
 ref=db.reference('/')
 
@@ -23,13 +23,13 @@ definition=""
 score=0
 uid=""
 loggedinuser={}
-config = {'apiKey': "AIzaSyCYO5472szH34vdwh-di98czNGFBA6oFtw",
- 'authDomain': "grammarhelp-a3d91.firebaseapp.com",
-  'projectId': "grammarhelp-a3d91",
-    'databaseURL':"https://grammarhelp-a3d91-default-rtdb.firebaseio.com/",
-  'storageBucket': "grammarhelp-a3d91.appspot.com",
- 'messagingSenderId': "1077998059970",
-  'appId': "1:1077998059970:web:767c89998329b15aac165b"
+config = {'apiKey': "",
+ 'authDomain': "",
+  'projectId': "",
+    'databaseURL':"",
+  'storageBucket': "",
+ 'messagingSenderId': "",
+  'appId': ""
 }
 firebase=pyrebase.initialize_app(config)
 db=firebase.database()
